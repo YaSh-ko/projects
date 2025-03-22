@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fleur de Mode</title>
+    <link rel="stylesheet" href="main/style.css">
+</head>
+<body>
+    <div class = "header">
+        <div class = "top">
+            <div class = "name">Fleur de Mode</div>
+            <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+        </div>
+
+        <div class = "line"></div>
+
+        <div class = "bottom">
+            <div class = menu>
+                <ul class="menu-links">
+                    <li><a href = main.html class = 'links active'>HOME</a></li>               
+                    <li><a href = shop.html class = 'links'>SHOP</a></li>
+                    <li><a href = beapartner.html class = 'links'>BE A PARTNER</a></li>                
+                    <li><a href = aboutus.html class = 'links'>ABOUT US</a></li>
+                </ul> 
+            </div>
+        </div>
+        
+    </div>
+
+    <div class = "discription">
+        <div class = "dis-slider">
+            <div class="dis-slide fade"> 
+                <img src="main_images/mainpage1.jpg" alt="Slide 1">
+            </div>
+            <div class="dis-slide fade"> 
+                <img src="main_images/mainpage2.jpg" alt="Slide 2">
+                <div class = 'img2-text'>
+                    <h2>SalesDay</h2>
+                    <div id = "timer">00:00:00 минут</div>
+                    <a href = shop.html><button>SHOP</button></a>
+                </div>
+            </div>
+            <div class="dis-slide fade"> 
+                <img src="main_images/mainpage3.jpg" alt = "Slide 3">
+                <div class = 'img3-text'>
+                    <h2>Be a partner</h2>
+                    <p>Join us to do great things together</p>
+                    <a href = beapartner.html><button>LETS GO</button></a>
+                </div>
+            </div>
+                
+        </div>
+        <button id="prevSlide"></button>
+        <button id="nextSlide"></button>
+    </div>
+
+    <div class = "feat-prod">
+        <div class = "feat-name">Featured products</div>
+        <div class = "products">
+            <div class = 'prod'>
+                <a href = shop.html><img src = 'main_images/mainprod1.jpg'></a>
+                <p>Grey jacket</p>
+                <p> 6 499</p>
+            </div>
+            <div class = 'prod'>
+                <a href = shop.html><img src = 'main_images/mainprod3.jpg'></a>
+                <p>Brown sweater</p>
+                <p>3 999</p>
+            </div>
+            <div class = 'prod'>
+                <a href = shop.html><img src = 'main_images/mainprod2.jpg'></a>
+                <p>White sweater</p>
+                <p>2 499</p>
+            </div>
+            <div class = 'prod'>
+                <a href = shop.html><img src = 'main_images/mainprod4.jpg'></a>
+                <p>Green coat</p>
+                <p>7 999</p>
+            </div>
+        </div>
+    </div>
+
+    <div class = "discount">
+        <img src = 'main_images/discount.jpg'>
+        <div class = 'discount-text'>
+            <h2>First Buy</h2>
+            <p>Use a promo code for the first purchase</p>
+            <h1>NewYEAR</h1>
+            <a href = shop.html><button>SHOP</button></a>
+        </div>
+    </div>
+
+    <div class="bottom">
+        <div class = "line"></div>
+        <div class = 'media'>
+            <a href = 'https://instagram.com/'><img src = 'main_images/dice_6064292.png'></a>
+            <a href = 'https://www.whatsapp.com/?lang=ru_RU'><img src = 'main_images/chat_6063816.png'></a>
+            <a href = 'https://mail.ru/'><img src = 'main_images/envelope_6038413.png'></a>
+            <a href = 'https://web.telegram.org'><img src = 'main_images/share_6324032.png'></a>
+        </div>
+    </div>
+
+ 
+    <script src="main/script.js"></script>
+</body>
+</html>

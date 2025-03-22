@@ -1,0 +1,656 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    cursor: default;
+    
+}
+
+::-webkit-scrollbar {
+    display: none; 
+}
+
+body {
+    font-family: serif;
+    color: white;
+    width: 100%;
+    overflow-y: scroll;
+}
+
+.header {
+    background-color: #000000;
+    height: 107px;
+    
+}
+
+a {
+    text-decoration: none;
+}
+
+.header .top {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-toggle {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+    position: absolute;
+    background-color: #000000;
+    color: white;
+    border: none;
+    top: 10px;
+    right: 20px;
+}
+
+.header .name {
+    font-size: 48px;
+}
+
+.header .line {
+    margin: auto 20px;
+    margin-bottom: 10px;
+    height: 5px;
+    background-color: #DDB287;
+    border-radius: 5px;
+
+}
+
+.header .bottom {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.menu {
+    position: relative;
+}
+
+.header .menu-links {
+    gap: 20px;
+    list-style-type: none;
+    display: flex;
+    font-size: 18px;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    
+}
+
+
+
+.links {
+    text-decoration: none;
+    color: white;
+}
+
+.links.active {
+    color: #DDB287;    
+}
+
+.header .links:hover {
+    color: #DDB287;
+    cursor: pointer;
+}
+
+.discription {
+    height: auto;
+    width: 100%;
+}
+.dis-slider {
+    position: relative;
+    width: 100%;
+    
+    height: 640px;
+    overflow: hidden;
+}
+
+.dis-slide {
+    position: absolute;
+    width: 100%;
+    height: 640px;
+    opacity: 0;
+    transition: opacity 1.5s ease;
+}
+
+.dis-slide.active {
+    opacity: 1;
+}
+
+.dis-slider img {
+    width: 100%;
+}
+
+#prevSlide {
+    position: absolute;
+    top: 107px;
+    left: 10px;
+    height: 640px;
+    width: 10%;
+    cursor: pointer;
+    background-color: #00000000;
+    border: none;
+    
+}
+
+#nextSlide {
+    position: absolute;
+    top: 107px;
+    right: 10px;
+    height: 640px;
+    width: 10%;
+    cursor: pointer;
+    background-color: #00000000;
+    border: none;
+    
+}
+
+.img2-text {
+    position: absolute; 
+    top: 50%; 
+    left: 28%;
+    width: 50%;
+    height: 500px;
+    transform: translate(-50%, -50%); 
+    color: black;
+    text-align: center;
+    z-index: 1;    
+}
+.img2-text h2 {
+    font-size: 128px;
+}
+
+.img2-text button {
+    margin-top: 20px;
+    font-size: 84px;
+    width: 360px;
+    height: 120px;
+    background-color: #000000;
+    color: #C1C0BC;
+    transition: transform 1s ease;
+    position: relative; 
+    z-index: 2;
+    cursor: pointer;
+}
+
+.img2-text button:hover {
+    transform: scale(1.05);
+    color: #DDB287;
+}
+
+.img3-text {
+    position: absolute; 
+    top: 60%; 
+    left: 70%;
+    width: 50%;
+    height: 500px;
+    transform: translate(-50%, -50%); 
+    color: black;
+    text-align: center;
+    z-index: 1;    
+}
+.img3-text h2 {
+    font-size: 104px;
+}
+
+.img3-text p {
+    font-size: 40px;
+}
+
+.img3-text button {
+    margin-top: 20px;
+    font-size: 70px;
+    width: 360px;
+    height: 120px;
+    background-color: #000000;
+    color: #DDB287;
+    transition: transform 1s ease;
+    position: relative; 
+    z-index: 2;
+    cursor: pointer;
+}
+
+.img3-text button:hover {
+    transform: scale(1.05);
+    color: #C1C0BC;
+}
+
+#timer {
+    font-size: 116px;
+}
+
+.feat-prod {
+    
+    margin-top: 60px;
+    height: auto;
+    color: #000000;
+    
+    
+}
+
+.feat-name {
+    text-align: center;
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    
+}
+
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: auto 30px;
+    
+}
+
+.feat-prod img {
+    width: 300px;
+    
+}
+
+.prod {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 330px;
+    height: 530px;
+    font-size: 32px;
+    align-content: center;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.prod:hover {
+    background-color: #000000;
+    color: white;
+    cursor: pointer;
+}
+
+.discount {
+    height: auto;
+    position: relative;
+    margin: 60px 30px;
+    text-align: center;
+}
+
+.discount img {
+    width: 100%;
+}
+
+.discount-text {
+    position: absolute; 
+    top: 60%; 
+    left: 70%;
+    width: 50%;
+    height: 500px;
+    transform: translate(-50%, -50%); 
+    color: black;
+    
+    text-align: center;
+    z-index: 1;    
+}
+
+.discount h2 {
+    font-size: 64px;
+    margin-bottom: 20px;
+}
+
+.discount p {
+    font-size: 40px;
+}
+
+.discount h1 {
+    font-size: 80px;
+}
+
+.discount button {
+    margin-top: 20px;
+    font-size: 84px;
+    width: 360px;
+    height: 120px;
+    background-color: #000000;
+    color: #C1C0BC;
+    transition: transform 1s ease;
+    position: relative; 
+    z-index: 2;
+}
+
+.discount button:hover {
+    transform: scale(1.05);
+    color: #DDB287;
+    cursor: pointer;
+}
+
+.bottom {
+    height: 250px;
+    background-color: #000000;
+    align-content: center;
+}
+
+.media {
+    width: 650px;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    justify-self: center;
+    margin-top: 50px;
+    
+}
+
+.media img {
+    width: 100px;
+    background-color: #DDB287;
+    border-radius: 20px;
+}
+
+.bottom .line {
+    margin: auto 20px;
+    height: 5px;
+    background-color: #DDB287;
+    border-radius: 5px;
+
+}
+
+.media img:hover {
+    background: radial-gradient(circle, #DDB287, #c29364);
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+@media (max-width: 1147px) {
+    .img2-text {
+        top: 30%; 
+        width: 50%;
+        height: 300px;
+        
+    }
+    .img2-text h2 {
+        font-size: 80px;
+    }
+    
+    .img2-text button {
+        margin-top: 10px;
+        font-size: 60px;
+        width: 200px;
+        height: 80px;
+    }
+    
+    .img3-text {
+        top: 35%; 
+        left: 70%;
+        width: 50%;
+        height: 300px; 
+    }
+    .img3-text h2 {
+        font-size: 64px;
+    }
+    .img3-text p {
+        font-size: 24px;
+    }
+    .img3-text button {
+        margin-top: 10px;
+        font-size: 50px;
+        width: 240px;
+        height: 60px;
+    }  
+    #timer {
+        font-size: 60px;
+    }
+
+    .discount-text {
+        top: 50%; 
+        left: 70%;
+        width: 50%;
+        height: 300px;   
+    }
+    
+    .discount h2 {
+        font-size: 50px;
+        margin-bottom: 10px;
+    }
+    
+    .discount p {
+        font-size: 20px;
+    }
+    
+    .discount h1 {
+        font-size: 50px;
+    }
+    
+    .discount button {
+        margin-top: 10px;
+        font-size: 52px;
+        width: 200px;
+        height: 80px;
+        
+    }
+
+    .feat-prod {
+    
+        margin-top: -140px;
+        height: auto;
+        color: #000000;
+        
+        
+    }
+
+    .products {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: auto 15%;
+        
+        
+    }
+}
+
+@media (max-width: 942px) {
+    .products {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: auto 7%; 
+    }    
+}
+
+@media (max-width: 480px) {
+    .img2-text {
+        top: 10%; 
+        width: 50%;
+        height: 100px;
+        
+    }
+    .img2-text h2 {
+        font-size: 40px;
+    }
+    
+    .img2-text button {
+        margin-top: 10px;
+        font-size: 28px;
+        width: 170px;
+        height: 40px;
+    }
+    
+    .img3-text {
+        top: 10%; 
+        left: 70%;
+        width: 50%;
+        height: 100px; 
+    }
+    .img3-text h2 {
+        font-size: 32px;
+    }
+    .img3-text p {
+        font-size: 14px;
+    }
+    .img3-text button {
+        margin-top: 10px;
+        font-size: 28px;
+        width: 180px;
+        height: 40px;
+    }  
+    #timer {
+        font-size: 30px;
+    }
+
+    .discount-text {
+        top: 30%; 
+        left: 70%;
+        width: 50%;
+        height: 100px;   
+    }
+    
+    .discount h2 {
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+    
+    .discount p {
+        font-size: 16px;
+    }
+    
+    .discount h1 {
+        font-size: 32px;
+    }
+    
+    .discount button {
+        margin-top: 10px;
+        font-size: 32px;
+        width: 100px;
+        height: 35px;
+        
+    }    
+
+    #prevSlide {
+        height: 200px;
+    }
+    
+    #nextSlide {
+        height: 200px;
+    }
+
+    .products {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: auto 20%; 
+    }   
+
+    .bottom {
+        height: 110px;
+    }
+    
+    .media {
+        width: 300px;
+        height: 80px;
+        display: flex;
+        justify-content: space-between;
+        justify-self: center;
+        margin-top: 15px;
+        
+    }
+    
+    .media img {
+        width: 50px;
+        background-color: #DDB287;
+        border-radius: 5px;
+    }
+    
+    .bottom .line {
+        margin-top: 10px;
+        height: 5px;
+        background-color: #DDB287;
+        border-radius: 5px;
+    
+    }
+    
+    .feat-prod {
+        margin-top: -400px;
+        height: auto;
+        color: #000000;
+ 
+    }
+
+}
+
+@media (max-width: 400px) {
+   
+    .feat-prod img {
+        width: 200px;
+        
+    }
+    
+    .prod {
+        width: 250px;
+        height: 400px;
+    }
+    .header {
+        position: relative;
+    }
+    .menu-links {
+        position: absolute;
+        transform: translateX(-50%);
+        top: -60px;
+        width: 290px;
+        height: 40px;
+        background-color: black;
+        background-color: black;
+        gap: 5px;
+        color: white;  
+        justify-content: space-between;
+        visibility: hidden;
+    }
+
+    .menu-links.activeon {
+        visibility: visible;
+    }
+
+    .links {
+        font-size: 10px;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .header .name {
+        font-size: 40px;
+    }
+
+    .discount-text {
+        top: 30%; 
+        left: 70%;
+        width: 50%;
+        height: 80px;   
+    }
+    
+    .discount h2 {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    
+    .discount p {
+        font-size: 12px;
+    }
+    
+    .discount h1 {
+        font-size: 22px;
+    }
+    
+    .discount button {
+        margin-top: 10px;
+        font-size: 22px;
+        width: 90px;
+        height: 28px;
+        
+    } 
+
+    .media img:hover {
+        border-radius: 5px;
+    }
+}
