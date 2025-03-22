@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="cart/style.css">
+</head>
+<body>
+    <div class = "header">
+        <div class = "top">
+            <div class = "name">Fleur de Mode</div>
+            <div class = "bag">
+                <img src = 'shop_images/shopping-bag_new-color.png'>
+            </div>
+        </div>
+
+        <div class = "line"></div>
+
+        <div class = "bottom">
+            <div class = menu>
+                <ul class="menu-links">
+                    <li><a href = main.html class = 'links'>HOME</a></li>               
+                    <li><a href = shop.html class = 'links'>SHOP</a></li>
+                    <li><a href = beapartner.html class = 'links'>BE A PARTNER</a></li>                
+                    <li><a href = aboutus.html class = 'links'>ABOUT US</a></li>
+                </ul> 
+            </div>
+        </div>
+        
+    </div>
+    <div class="container">
+        <div class = 'left'>
+            <h1>Ваш заказ:</h1>
+            <div id = "cart-prods"></div>
+            <p id = 'total-price'>Итого: 0 руб.</p>
+            <button id = 'clear-cart'>Очистить</button>
+            <a href="shop.html"><button class = 'return'>Вернуться в магазин</button></a>
+            
+        </div>
+
+        <div class = 'right'>
+            <h1>Ваши данные:</h1>
+
+            <form action="#">
+                    
+                <div class="description">ИМЯ</div>
+                <div class="input-box">
+                    <input type="text" id = 'field1' placeholder="Введите имя и отчество">
+                </div>   
+                
+                <div class="description">ПОЧТА</div>
+                <div class="input-box">
+                    <input type="text" id = 'field2' placeholder="Ваш email">
+                </div> 
+    
+                <div class="description">ТЕЛЕФОН</div>
+                <div class="input-box">
+                    <input type="text"  id = 'field3' placeholder="Ваш телефон">
+                </div> 
+    
+                <div class="description">АДРЕС</div>
+                <div class="input-box">
+                    <input type="text"  id = 'field4' placeholder="Ваш адрес">
+                </div>
+
+                <div class = "description">ТИП ДОСТАВКИ</div>
+                <select class = 'selector' name="delivery" id="delivery">
+                    <option value="Самовывоз">Самовывоз</option>
+                    <option value="Доставка">Доставка</option>
+                </select>
+    
+                <span id = 'error-message'></span>
+                
+                <div class="button">
+                    <input type="Submit" onclick="Errors()" value="Заказать">          
+                </div>
+                
+                
+    
+            </form>
+        </div>
+    </div>
+    <script src="cart/script.js"></script>
+</body>
+</html>
